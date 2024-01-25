@@ -13,33 +13,29 @@ export const navLinks = [
     id: "product",
     title: "Projects",
   },
-  {
-    id: "clients",
-    title: "Clients",
-  },
 ];
 
 export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "User-Friendly Interface and Experience",
+    title: "Web Development",
     content:
-      "Crafting an engaging user interface and seamless experience to captivate users on both app and web platforms.",
+      "We create cutting-edge websites that seamlessly blend captivating design with advanced functionality.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "Secure and Efficient User Authentication",
+    title: "App Development",
     content:
-      "Ensure user data security with a robust authentication system, implementing secure registration, login processes, and additional security measures.",
+      "We craft innovative mobile applications, leveraging the latest technologies to deliver user-centric solutions",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Key Functionality Specific ",
+    title: "Graphic Designing",
     content:
-      "Distinguish your startup by prioritizing the development of a standout feature that addresses user needs or pain points, setting your app and web platforms apart.",
+      "We bring creativity to life, designing visually compelling assets that enhance brand identity and communication.",
   },
 ];
 
@@ -71,33 +67,25 @@ export const stats = [
   {
     id: "stats-2",
     title: `Within`,
-    value: "6 months",
+    value: "3 months",
   },
 ];
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "RecogX",
     links: [
       {
-        name: "Content",
+        name: "HOME",
         link: "https://www.hoobank.com/content/",
       },
       {
-        name: "How it Works",
+        name: "FEATURES",
         link: "https://www.hoobank.com/how-it-works/",
       },
       {
-        name: "Create",
+        name: "PROJECTS",
         link: "https://www.hoobank.com/create/",
-      },
-      {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
       },
     ],
   },
@@ -142,5 +130,29 @@ export const clients = [
   {
     id: "client-4",
     logo: dropbox,
+  },
+];
+
+export const footerSocials = [
+  {
+    title: "Contact us",
+    links: [
+      {
+        name: "Instagram",
+        link: "https://www.hoobank.com/content/",
+      },
+      {
+        name: "Linkedin",
+        link: "https://www.hoobank.com/how-it-works/",
+      },
+      {
+        name: "Facebook",
+        link: "https://www.hoobank.com/create/",
+      },
+      {
+        name: "Twitter",
+        link: "https://www.hoobank.com/explore/",
+      },
+    ],
   },
 ];

@@ -1,6 +1,8 @@
 import { features } from "../constants";
 import styles, { layout } from "../style";
 import Button from "./Button";
+import Typewriter from "react-ts-typewriter";
+
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-row p-6 rounded-[20px] ${index !== features.length - 1 ? "mb-6" : "mb-0"} feature-card`}>
@@ -21,9 +23,10 @@ const FeatureCard = ({ icon, title, content, index }) => (
 const Business = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle
-        the software.
+      <h2 className={styles.heading2} >
+      <Typewriter cursor={false} text='You do the business,'/>
+      <br className="sm:block hidden" /> 
+      <Typewriter text='we will handle the software.' />
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
       Our team ensures seamless software solutions from development to maintenance, prioritizing your business success.{/* Leave the technical complexities to us while you focus on your business goals. Our team is dedicated to managing and executing the software solutions you need. From development to maintenance, we ensure seamless integration, allowing you to prioritize what matters most – the success of your business */}

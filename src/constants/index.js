@@ -11,7 +11,7 @@ export const navLinks = [
   },
   {
     id: "product",
-    title: "Product",
+    title: "Projects",
   },
   {
     id: "clients",
@@ -23,23 +23,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "User-Friendly Interface and Experience",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Crafting an engaging user interface and seamless experience to captivate users on both app and web platforms.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Secure and Efficient User Authentication",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Ensure user data security with a robust authentication system, implementing secure registration, login processes, and additional security measures.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Key Functionality Specific ",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Distinguish your startup by prioritizing the development of a standout feature that addresses user needs or pain points, setting your app and web platforms apart.",
   },
 ];
 
@@ -60,31 +60,18 @@ export const feedback = [
     title: "Founder & Leader",
     img: people02,
   },
-  {
-    id: "feedback-3",
-    content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
-  },
 ];
 
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Projects",
+    value: "2+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
-  },
-  {
-    id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: `Within`,
+    value: "6 months",
   },
 ];
 
@@ -111,44 +98,6 @@ export const footerLinks = [
       {
         name: "Terms & Services",
         link: "https://www.hoobank.com/terms-and-services/",
-      },
-    ],
-  },
-  {
-    title: "Community",
-    links: [
-      {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
-      },
-      {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
-      },
-      {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
-      },
-      {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
-      },
-      {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
-      },
-    ],
-  },
-  {
-    title: "Partner",
-    links: [
-      {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
-      },
-      {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
       },
     ],
   },

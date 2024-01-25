@@ -23,12 +23,10 @@ const Business = () =>  (
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
         You do the business, <br className="sm:block hidden" /> we’ll handle
-        the money.
+        the software.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds
-        of credit cards on the market.
+      Our team ensures seamless software solutions from development to maintenance, prioritizing your business success.{/* Leave the technical complexities to us while you focus on your business goals. Our team is dedicated to managing and executing the software solutions you need. From development to maintenance, we ensure seamless integration, allowing you to prioritize what matters most – the success of your business */}
       </p>
 
       <Button styles={`mt-10`} />

@@ -1,6 +1,6 @@
 import { features } from "../constants";
 import styles, { layout } from "../style";
-import Button from "./Button";
+// import Button from "./Button";
 import Typewriter from "react-ts-typewriter";
 
 
@@ -32,7 +32,7 @@ const Business = () =>  (
       Our team ensures seamless software solutions from development to maintenance, prioritizing your business success.{/* Leave the technical complexities to us while you focus on your business goals. Our team is dedicated to managing and executing the software solutions you need. From development to maintenance, we ensure seamless integration, allowing you to prioritize what matters most – the success of your business */}
       </p>
 
-      <Button styles={`mt-10`} />
+      {/* <Button styles={`mt-10`} /> */}
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>

@@ -21,7 +21,7 @@ const CardDeal = () => (
       <Player
   autoplay
   loop
-  src="https://lottie.host/c6156027-d723-4258-8b47-15359d7abfa3/89ahsy8T51.json"
+  src="https://lottie.host/0f175b58-03a1-4371-900b-ca772f68366c/KUVnV8kzof.json"
   className="w-[80%] h-[80%] relative mr-32"
 >
   {/* <Controls visible={true} buttons={['play', 'repeat', 'frame', 'debug']} /> */}

@@ -6,19 +6,20 @@ const Hero = () => {
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
+      
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-            The Next <br className="sm:block hidden" />{" "}
-            <span className="text-gradient">Generation</span>{" "}
+          
+            <span className="text-gradient">Recogx_init</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
           </div>
         </div>
-
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
-          Software Solutions.
+        <h1 className="font-poppins font-semibold ss:text-[56px] text-[40px] text-white ss:leading-[100.8px] leading-[75px] w-full">
+          The Next Gen <br className="sm:block hidden" />{" "}Software Solutions.
         </h1>
+        
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         As passionate student developers, we actively create innovative solutions, spanning from mobile apps to web applications. With a blend of coding expertise and collaboration, we transform creative ideas into practical solutions."{/* Our team of enthusiastic student developers is deeply engaged in crafting innovative solutions for various projects, ranging from mobile apps to web applications. We leverage our coding skills and collaborative efforts to bring creative and practical ideas to life. */}
         </p>

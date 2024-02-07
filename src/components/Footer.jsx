@@ -14,6 +14,12 @@ const Footer = () => (
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
         "Initiating the recognition for you"
         </p>
+        {/* <p className={`${styles.heading3} text-start mt-5`}>
+        Sudeep Ranjan Sahoo <br className="sm:block hidden" />{" "} 
+      </p>
+      <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
+      Founder <br className="sm:block hidden" />{" "} sudeep160403@gmail.com <br className="sm:block hidden" />{" "} +91 9398481212
+      </p> */}
       </div>
 
     <div className="flex-[1.5] w-full flex flex-row justify-end align-middle flex-wrap md:mt-0 mt-10">

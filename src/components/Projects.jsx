@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./css/Projects.css";
 // import { Avatar } from "@mui/material";
-import { ArrowBackIos, ArrowForwardIos } from "@mui/icons-material";
+import { ArrowBackIos, ArrowForwardIos, Description } from "@mui/icons-material";
 import styles from "../style";
 import {blogs,exam} from "../assets"
 
@@ -34,15 +34,15 @@ const Projects = () => {
       <div style={{ width: "50%", textAlign: "center" }}>
       <h1 className={styles.heading2}>Our<span className="bg-opacity-20 text-[#28A9E2] bg-[#00f6ff] px-1 py-1 ml-4">Projects</span></h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          <Card img={blogs} />
-          <Card img={exam} />
+          <Card img={blogs} Title="CHcommune" Description="A MERN stack fashion blog web application for sharing trends, styling tips, and outfit inspirations."/>
+          <Card img={exam} Title="Exam Booster" Description="A Flutter-based mobile app offering JEE and NEET aspirants a platform for exam preparation through mock tests and practice exams." />
         </Slider>
       </div>
     </div>
   );
 };
 
-const Card = ({ img }) => {
+const Card = ({ img,Title,Description }) => {
   return (
     <div
       style={{
@@ -66,12 +66,12 @@ const Card = ({ img }) => {
         }}
       /> */}
       <div>
-      <img src={img} className="w-[100vw] h-[30vh] mt-5"/>
+      <img src={img} className="w-[100vw] h-[30vh] mt-5 object-scale-down  overflow-hidden"/>
       </div>
-
+     
       <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "#28A9E2" }}>CHcommune</span> ,
-        Open Source Engineer @supertokens
+        <span style={{ fontWeight: 500, color: "#28A9E2" }}>{Title}</span> ,
+        {Description}
       </p>
     </div>
   );

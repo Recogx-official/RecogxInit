@@ -1,9 +1,26 @@
 import { card } from "../assets";
 import styles, { layout } from "../style";
-import Button from "./Button";
+import Btn from "./Button1.jsx";
 import { Player, Controls } from '@lottiefiles/react-lottie-player';
+import styled, { ThemeProvider } from "styled-components";
+import useHover from "../utils/useHover";
+import { lightTheme } from "../theme/theme";
+import FramerMagnetic from "../utils/framermagnetic.jsx";
+const Page = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: ${({ theme }) => theme.fonts.primary};
+`;
 
-const CardDeal = () => (
+
+
+
+
+const CardDeal = () => {
+  const [hoverRef, isHovered] = useHover();
+  return (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
@@ -12,8 +29,22 @@ const CardDeal = () => (
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
       Unlock cost-effective solutions with our budget friendly pricing, delivering exceptional value without compromising on quality
       </p>
-
-      <Button styles={`mt-10`} />
+      <ThemeProvider theme={lightTheme}>
+                  <Page>
+                    <FramerMagnetic>
+                      <Btn
+                        ref={hoverRef}
+                        href="https://www.chcommune.com/" 
+                        type="flat"
+                        style={{ borderRadius: '10px', backgroundColor: 'blue', color: 'white' }}
+                        onClick={() => console.log("clicked")}
+                      >
+                        Contact us
+                      </Btn>
+                    </FramerMagnetic>
+                  </Page>
+                </ThemeProvider>
+      
     </div>
 
     <div className={layout.sectionImg}>
@@ -29,5 +60,5 @@ const CardDeal = () => (
     </div>
   </section>
 );
-
+  }
 export default CardDeal;

@@ -1,8 +1,20 @@
 import styles from "../style";
 import { discount, robot } from "../assets";
 import GetStarted from "./GetStarted";
-
+import Button from "./Button";
+import styled, { ThemeProvider } from "styled-components";
+import useHover from "../utils/useHover";
+import { lightTheme } from "../theme/theme";
+import FramerMagnetic from "../utils/framermagnetic.jsx";
+const Page = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: ${({ theme }) => theme.fonts.primary};
+`;
 const Hero = () => {
+  const [hoverRef, isHovered] = useHover();
   return (
     <section id="home" className={`flex md:flex-row flex-col ${styles.paddingY}`}>
       <div className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}>
@@ -13,7 +25,18 @@ const Hero = () => {
             <span className="text-gradient">Recogx_init</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
-            <GetStarted />
+          <ThemeProvider theme={lightTheme}>
+                  <Page>
+                    <FramerMagnetic>
+                      <Button
+                        ref={hoverRef}
+                        onClick={() => console.log("clicked")}
+                      >
+                        Contact us
+                      </Button>
+                    </FramerMagnetic>
+                  </Page>
+                </ThemeProvider>
           </div>
         </div>
         <h1 className="font-poppins font-semibold ss:text-[56px] text-[40px] text-white ss:leading-[100.8px] leading-[75px] w-full">
@@ -36,7 +59,19 @@ const Hero = () => {
       </div>
 
       <div className={`ss:hidden ${styles.flexCenter}`}>
-        <GetStarted />
+      <ThemeProvider theme={lightTheme}>
+                  <Page>
+                    <FramerMagnetic>
+                      <Button
+                        ref={hoverRef}
+                        onClick={() => console.log("clicked")}
+                      >
+                        Get Started
+                      </Button>
+                    </FramerMagnetic>
+                  </Page>
+                </ThemeProvider>
+                <GetStarted />
       </div>
     </section>
   );

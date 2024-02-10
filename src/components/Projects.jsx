@@ -32,17 +32,17 @@ const Projects = () => {
     >
     
       <div style={{ width: "50%", textAlign: "center" }}>
-      <h1 className={styles.heading2}>Our<span className="bg-opacity-20 text-[#28A9E2] bg-[#00f6ff] px-1 py-1 ml-4">Projects</span></h1>
+      <h1 className={styles.heading2}>Our<span className="bg-opacity-20 text-[#00f7ff] bg-[#a3fbfe] px-1 py-1 ml-4">Projects</span></h1>
         <Slider prevArrow={<PreviousBtn />} nextArrow={<NextBtn />} dots>
-          <Card img={blogs} Title="CHcommune" Description="A MERN stack fashion blog web application for sharing trends, styling tips, and outfit inspirations."/>
-          <Card img={exam} Title="Exam Booster" Description="A Flutter-based mobile app offering JEE and NEET aspirants a platform for exam preparation through mock tests and practice exams." />
+          <Card img={blogs}  Lin="https://www.chcommune.com/" Title="CHcommune" Description="A MERN stack fashion blog web application for sharing trends, styling tips, and outfit inspirations."/>
+          <Card img={exam}  Lin="https://www.chcommune.com/" Title="Exam Booster" Description="A Flutter-based mobile app offering JEE and NEET aspirants a platform for exam preparation through mock tests and practice exams." />
         </Slider>
       </div>
     </div>
   );
 };
 
-const Card = ({ img,Title,Description }) => {
+const Card = ({ img,Title,Description,Lin }) => {
   return (
     <div
       style={{
@@ -70,7 +70,7 @@ const Card = ({ img,Title,Description }) => {
       </div>
      
       <p style={{ fontStyle: "italic", marginTop: 25 }}>
-        <span style={{ fontWeight: 500, color: "#28A9E2" }}>{Title}</span> ,
+        <a href={Lin}><span style={{ fontWeight: 500, color: "#00f7ff" }}>{Title}</span> </a>,
         {Description}
       </p>
     </div>

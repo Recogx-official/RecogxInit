@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion, useAnimation } from 'framer-motion';
 import useMousePosition from '../utils/useMousePointer.js';
 import { distance } from '../utils/utils.js';
-import { lightTheme } from "../theme/theme";
+import { lightTheme } from "../theme/theme.js";
 
 const Text = styled(motion.span)`s
   display: block;
@@ -26,9 +26,9 @@ const Style = styled.a`
   display: inline-flex;
   align-item:center;
   justify-content:center;
-  border-radius: 50%;
-  width: 190px;
-  height: 190px;
+  border-radius: 4%;
+  width: 200px;
+  height: 60px;
   margin: 1em;
   padding: 1em 2em;
   font-size: 1.25em;
@@ -51,18 +51,18 @@ const Style = styled.a`
 
   &:hover {
     border: 0px solid #707070;
+    background-color: #191919;
   }
 `;
 
 const Fill = styled(motion.div)`
   z-index: 10;
   position: absolute;
-  top: -50%;
-  left: -25%;
-  width: 150%;
-  height: 250%;
+  top:0%;
+  width: 100%;
+  height: 100%;
   display: block;
-  border-radius: 50%;
+  border-radius: 0%;
   background: #33bdbd;
   pointer-events: none;
   transform: translate3d(0, 80%, 0);

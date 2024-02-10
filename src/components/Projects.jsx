@@ -26,7 +26,7 @@ const NextBtn = (props) => {
 };
 const Projects = () => {
   return (
-    <div
+    <div id="projects"
       className="testimonial"
       style={{ display: "flex", justifyContent: "center", marginTop: 50 }}
     >
